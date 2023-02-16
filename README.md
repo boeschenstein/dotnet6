@@ -8,6 +8,34 @@ https://github.com/boeschenstein/dotnet5
 
 https://docs.microsoft.com/en-us/dotnet/core/compatibility/6.0
 
+## Nullable
+
+```cs
+// int?                        - nullable value type
+// string?                     - nullable reference type
+// id?.ToString()              - null conditional operator (BEWARE: same name BUT different: 'conditional operator': int x = a == 33 ? 1 : 2;)
+// var v = i ?? 0;             - null coalescing operator
+// (y ??= new()).Add(8);       - null coalescing assignment operator
+// <nullable>enable</nullable> - nullable annotation context
+// s!.ToString()               - null forgiving operator
+```
+
+4 nullable annotation context options: enable, disable, annotations, warnings
+
+9 nullable-enable directives: enable, disable, restore, enable warnings, enable annotations, ...
+
+```cs
+#nullable disable
+... OR Mapper Class (EF, Dapper) ...
+#nullable restore
+```
+
+Nullable Reference Types: <https://learn.microsoft.com/en-us/dotnet/csharp/nullable-references>
+
+Nullable with Generics: <https://learn.microsoft.com/en-us/dotnet/csharp/nullable-references#generics>
+
+From: <https://www.youtube.com/watch?v=-bn4e5xUEeM>
+
 ## Upgrade .NET Core 3 -> .NET 6
 
 Edit csproj, change from:
