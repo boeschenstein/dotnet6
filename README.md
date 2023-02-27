@@ -10,6 +10,8 @@ https://docs.microsoft.com/en-us/dotnet/core/compatibility/6.0
 
 ## Nullable
 
+From: <https://youtu.be/64hWLzJSsGY> ?
+
 ```cs
 // int?                        - nullable value type
 // string?                     - nullable reference type
